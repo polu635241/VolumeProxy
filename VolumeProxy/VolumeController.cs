@@ -24,18 +24,6 @@ namespace VolumeProxy
         private const UInt32 KeyEvent_ExtenedKey = 0x0001;
         private const UInt32 KeyEvent_KeyUp = 0x0002;
 
-        /// <summary>
-        /// 至少要按住幾秒才會觸發 連按
-        /// </summary>
-        const float holdMinTime = 1f;
-
-        /// <summary>
-        /// 連按處發間隔
-        /// </summary>
-        const float holdInterval = 0.1f;
-
-        float keepHoldTimer;
-
         Thread updateThread;
 
         public void Init () 

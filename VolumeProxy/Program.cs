@@ -11,6 +11,9 @@ namespace VolumeProxy
     {
         static void Main (string[] args)
         {
+            WindowController windowController = new WindowController ();
+            windowController.Init ();
+
             VolumeController volumeController = new VolumeController ();
             volumeController.Init ();
             SpinWait.SpinUntil (() => false);
